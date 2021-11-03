@@ -26,15 +26,33 @@ library(janitor)
 
 ```{r read in data}
 
+osm <- st_read(here("greater-london-latest-free","gis_osm_pois_free_1.shp"))%>%
+  st_transform(.,27700)%>%
+  filter(fclass == "hotel")
+  #change to: OSGB 1936 / British National Grid: ESPSG: 27700
+  #filter rows where fclass colomn shows hotels
+   
+
+plot(LondonBoroughs) <- st_read(here("statistical-gis-boundaries-london","ESRI", "London_Borough_Excluding_MHW.shp" )) %>%
+  st_transform(.,27700)
 
 
+Worldcities <-  st_read(here("World_Cities","World_Cities.shp"))%>%
+  st_transform(.,27700)
 
 
+ukoutline <- st_read(here("uk_outline","gadm36_GBR_0.shp"))%>%
+  st_transform(.,27700)
+  
+
+  
 ```
 
 ## Join Data
 
 ```{r Join}
+
+
 
 ```
 
