@@ -1,0 +1,48 @@
+---
+title: "Wk_5_Practical"
+author: "Loubna"
+date: "11/3/2021"
+output: html_document
+---
+
+
+## Library
+
+
+```{r library}
+
+
+library(sf)
+library(tmap)
+library(tmaptools)
+library(tidyverse)
+library(here)
+library(janitor)
+
+```
+
+
+## Read in Data
+
+```{r read in data}
+
+
+
+
+
+```
+
+## Join Data
+
+```{r Join}
+
+```
+
+## Map Data
+
+```{r Map}
+
+
+
+```
+
